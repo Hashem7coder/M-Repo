@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+        background: #6fdcf1;
+
+        font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-weight: 600;
+    text-align: center;
+}
+ 
+h1{
+    text-align: center;
+}
+#first {
+	margin-top: 10px;
+	color: #0051ff;
+    font-size: 20px;
+}
+
+#second {
+	color: #fb5000;
+    font-size: 20px;
+
+}
+
+#third {
+	color: #025F70;
+	margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.tehtavan-lista-sailio{
+    width: 600px;
+    margin: 30px auto 0;
+    background-color: #F6F6F6;
+
+}
+.tehtavan-lista-sailio .lisaa-tehtava{
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+
+}
+.tehtavan-lista-sailio .lisaa-tehtava input{
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(255, 255, 255, .3);
+    width: calc(100% - 15px);
+    color: #FFF;
+    font-size: 20px;
+
+}
+
+.tehtavan-lista-sailio .lisaa-tehtava input:focus{
+    outline: none;
+}
+
+.tehtavan-lista-sailio .lisaa-tehtava .plus{
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    background-color: #FFF;
+    right: 12px;
+    border-radius: 50%;
+    line-height: 43px;
+    text-align: center;
+    color: #009688;
+    font-size: 38px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.tehtavan-lista-sailio .lisaa-tehtava .plus:hover{
+    transform: rotate(90deg);
+}
+.tehtavan-lista-sailio .tehtavan-sisalto{
+    padding: 15px;
+}
+.tehtavan-lista-sailio .tehtavan-sisalto .ei-tehtava-viesti{
+    color: #777;
+    font-size: 15px;
+}
+.tehtavan-lista-sailio .tehtavan-sisalto > span{
+ display: block;
+ background-color: white;
+ padding: 10px;
+}
+
+.tehtavan-lista-sailio .tehtavan-sisalto > span:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.tehtavan-lista-sailio .tehtavan-sisalto .tehtavan-box .delete{
+    float: right;
+    background-color: #E91E63;
+    padding: 4px 10px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tehtavan-lista-sailio .tehtavan-sisalto .tehtavan-box.finished{
+    text-decoration: line-through;
+}
+
+.montako-tehtava{
+    overflow:hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 12px;
+}
+
+.montako-tehtava .tehtavan-maara{
+    width: 50%;
+    float: left;
+    padding: 10px;
+
+}
+
+.montako-tehtava .completed-tehtavat{
+    width: 50%;
+    height: 50%;
+    float: right;
+    padding: 20px;
+    text-align: right;
+}
+
+.montako-tehtava .tehtavan-maara span,
+.montako-tehtava .completed-tehtavat span{
+    color: rgb(255, 255, 255);
+    padding: 1px 5px;
+    font-size: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.montako-tehtava .tehtavan-maara span{
+    background-color: #E91E63;
+}
+.montako-tehtava .completed-tehtavat span{
+    background-color: green;
+}

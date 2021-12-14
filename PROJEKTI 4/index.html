@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävälista</title>
+    <link rel="stylesheet" href="tyyli.css">
+
+</head>
+
+<body>
+
+    <div class="tehtavan-lista-sailio">
+        <h1>Tehtäviä (To Do List)</h1>
+
+        <p id="first">Lisätääksesi uuden tehtävän, syötä se alla olevaan kenttään</p>
+        <p id="second">Napauta tehtävää, kun olet tehnyt sen</p>
+        <p id="third">Napauta tehtävän perässä Delete -painiketta poistaaksesi tehtävän</p>
+        <div class="lisaa-tehtava">
+            <input type="text" placeholder="Kirjoita tehtäväsi tähän">
+            <span class="plus">+</span>
+        </div>
+        <div class="tehtavan-sisalto">
+            <span class="ei-tehtava-viesti ">Ei tehtäviä näytettäväksi</span>
+
+            <div class="montako-tehtava">
+                <div class="tehtavan-maara">
+                    Tehtävien määrä <span>0</span>
+                </div>
+                <div class="completed-tehtavat">
+                    Valimiita tehtäviä <span>0</span>
+                </div>
+                <script src="javascript.js"></script>
+            </div>
+
+</body>
+
+</html>
